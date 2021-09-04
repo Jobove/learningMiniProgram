@@ -2,14 +2,15 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/page2/page2"
+    "pages/mine/mine"
   ],
+
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#77e623",
+    "navigationBarTextStyle": "white"
   },
+
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
@@ -17,13 +18,14 @@
       "iconPath": "icon/homePage.png",
       "selectedIconPath": "icon/homePageSelected.png"
     }, {
-      "pagePath": "pages/page2/page2",
+      "pagePath": "pages/mine/mine",
       "text": "我的",
       "iconPath": "icon/mine.png",
       "selectedIconPath": "icon/mineSelected.png"
     }
     ]
   },
+
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

@@ -1,5 +1,0 @@
-<!--pages/page2/page2.wxml-->
-
-<view hover-class="h-class">
-点击我试试
-</view>

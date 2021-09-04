@@ -1,0 +1,32 @@
+/* pages/page2/page2.wxss */
+
+.user-info {
+  margin: 20rpx;
+}
+
+.avatar-container {
+  height: 128rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  border-style: dashed;
+  border-width: 0rpx;
+  border-color: grey;
+}
+
+.login-request {
+  margin: 10rpx;
+  text-align: center;
+}
+
+.menu {
+  text-align: center;
+}
