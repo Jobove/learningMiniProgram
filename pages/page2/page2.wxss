@@ -1,1 +1,7 @@
 /* pages/page2/page2.wxss */
+
+.h-class{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+}
