@@ -13,6 +13,12 @@ Page({
         })
     }
   },
+
+  jumpToRecord(e) {
+    wx.redirectTo({
+      url: '../logs/logs',
+    })
+  },
   
   getUserProfile(e) {
     wx.getUserProfile({

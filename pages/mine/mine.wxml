@@ -1,40 +1,41 @@
-<!--pages/page2/page2.wxml-->
 <view class="body">
-  <view class="user-info">
-    <block wx:if="{{!hasUserInfo}}">
-      <view class="avatar-container">
-        <image class="user-avatar" src="../../icon/loginRequest.png" bindtap="getUserProfile"></image>
-      </view>
-      <!-- <view class="login-request">
-      请登录
-    </view> -->
-    </block>
-    <block wx:elif="{{hasUserInfo}}">
-      <view class="avatar-container">
-        <image class="user-avatar" src="{{userInfo.avatarUrl}}"></image>
-      </view>
-    </block>
-  </view>
-
-  <view class="menu-container">
-    <ul class="menu">
-      <li class="user-record">
-        <view>
-          我的记录
+  <image class="background" src="../../icon/background.jpg" mode="aspectFill">
+  </image>
+  <view class="grey-bg"></view>
+  <view class="content">
+    <view class="user-info">
+      <block wx:if="{{!hasUserInfo}}">
+        <view class="avatar-container">
+          <image class="user-avatar" src="../../icon/loginRequest.png" bindtap="getUserProfile"></image>
         </view>
-      </li>
-
-      <li class="user-statistic">
-        <view>
-          我的数据
+      </block>
+      <block wx:elif="{{hasUserInfo}}">
+        <view class="avatar-container">
+          <image class="user-avatar" src="{{userInfo.avatarUrl}}"></image>
         </view>
-      </li>
+      </block>
+    </view>
 
-      <li class="feedback">
-        <view>
-          我的建议
-        </view>
-      </li>
-    </ul>
+    <view class="menu-container">
+      <ul class="menu">
+        <li class="menu-item user-record">
+          <view>
+            我的记录
+          </view>
+        </li>
+
+        <li class="menu-item user-statistic">
+          <view>
+            我的数据
+          </view>
+        </li>
+
+        <li class="menu-item feedback">
+          <view>
+            我的建议
+          </view>
+        </li>
+      </ul>
+    </view>
   </view>
 </view>

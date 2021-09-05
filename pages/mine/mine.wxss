@@ -1,11 +1,20 @@
-/* pages/page2/page2.wxss */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  z-index: -1;
+}
 
-view {
-  /* height: 100%;
-  width: 100%; */
-  background-image: url(../../icon/background.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+.grey-bg {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  background-color: #e8e8e8;
 }
 
 .user-info {
@@ -20,22 +29,33 @@ view {
   align-items: center;
   justify-content: space-between;
   margin-top:30rpx;
-
 }
 
 .user-avatar {
-  width: 128rpx;
+  width: 120rpx;
   height: 128rpx;
   border-radius: 50%;
-  border-style: dashed;
-  border-width: 0rpx;
+  border-style:solid;
+  border-width: 7rpx;
   border-color: grey;
+  background-color: white;
 }
 
 .menu-container {
-  margin-top: 40rpx
+  height: 40%;
+  margin-top: 40rpx;
+  padding: 20rpx;
+  padding-right: 20rpx;
 }
 
 .menu {
+  height: auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  background-color: white;
+}
+
+.menu-item {
+  height: 10vw;
 }
